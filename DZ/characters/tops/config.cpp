@@ -38,4 +38,16 @@ class cfgVehicles
 			"Roach_Movie_Mod\DZ\characters\tops\data\LabCoat_Helix_co.paa"
 		};
 	};
+	class TacticalShirt_ColorBase;
+	class Roach_TacticalShirt_Helix: TacticalShirt_ColorBase
+	{
+		scope=2;
+		visibilityModifier=0.69999999;
+		hiddenSelectionsTextures[]=
+		{
+			"Roach_Movie_Mod\DZ\characters\tops\data\roach_pcu5jacket_ground_helix.paa",
+			"Roach_Movie_Mod\DZ\characters\tops\data\roach_pcu5jacket_helix.paa",
+			"Roach_Movie_Mod\DZ\characters\tops\data\roach_pcu5jacket_helix.paa"
+		};
+	};
 };
