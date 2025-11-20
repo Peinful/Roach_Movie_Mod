@@ -2,7 +2,7 @@ class ActionStealthKillTargetCB : ActionContinuousBaseCB
 {
 	override void CreateActionComponent()
 	{
-		m_ActionData.m_ActionComponent = new CAContinuousTime( 0.2 );
+		m_ActionData.m_ActionComponent = new CAContinuousTime( 0.1 );
 	}
 };
 
@@ -17,7 +17,7 @@ class ActionStealthKillTarget: ActionContinuousBase
 		m_FullBody = true;
 		m_StanceMask = DayZPlayerConstants.STANCEMASK_ERECT;
 		m_SpecialtyWeight = UASoftSkillsWeight.PRECISE_LOW;
-		m_Text = "Perform Stealth Execution";
+		m_Text = "Perform Stealth Knockout";
 	}
 
 	override void CreateConditionComponents()
@@ -48,8 +48,8 @@ class ActionStealthKillTarget: ActionContinuousBase
 
 		if(target_player && source_player && target_player.IsAlive())
 		{	
-			target_player.SetHealth("GlobalHealth", "Health", 0);
-			target_player.SetHealth("GlobalHealth", "Blood", 0);
+			target_player.SetHealth("GlobalHealth", "Shock", 0);
+			target_player.AddHealth("GlobalHealth", "Shock", -1000.0);
 		}	
 	}
 };
