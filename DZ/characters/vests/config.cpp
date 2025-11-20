@@ -17,6 +17,38 @@ class CfgPatches
 
 class cfgVehicles
 {
-	class Clothing_Base;
-	class Clothing;
+	class PlateCarrierVest;
+	class Roach_PlateCarrierVest_Helix: PlateCarrierVest
+    {
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Roach_Movie_Mod\DZ\characters\vests\data\Roach_BallisticVest_Helix.paa",
+			"Roach_Movie_Mod\DZ\characters\vests\data\Roach_BallisticVest_Helix.paa",
+			"Roach_Movie_Mod\DZ\characters\vests\data\Roach_BallisticVest_Helix.paa"
+		};
+	};
+	class PlateCarrierPouches;
+	class Roach_PlateCarrierPouches_Helix: PlateCarrierPouches
+    {
+		scope=2;
+		hiddenSelections[]=
+		{
+			"camoGround",
+			"camoMale",
+			"camoFemale"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Roach_Movie_Mod\DZ\characters\vests\data\Roach_BallisticVest_Helix.paa",
+			"Roach_Movie_Mod\DZ\characters\vests\data\Roach_BallisticVest_Helix.paa",
+			"Roach_Movie_Mod\DZ\characters\vests\data\Roach_BallisticVest_Helix.paa"
+		};
+	};
 };

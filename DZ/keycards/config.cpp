@@ -18,8 +18,8 @@ class CfgPatches
 class cfgVehicles
 {
 	class Inventory_Base;
-	class evg_keycards_base;
-	class Roach_Keycards_Helix_Level1: evg_keycards_base
+	/*class evg_keycards_base;
+	class Roach_Keycards_Helix_Level_1: evg_keycards_base
 	{
 		scope = 2;
 		displayName = "Card Name Here";
@@ -28,5 +28,5 @@ class cfgVehicles
 		{
 			"Roach_Movie_Mod\DZ\keycards\data\roach_keycards_helix_level_1.paa"
 		};
-	};
+	};*/
 };
